@@ -22,38 +22,6 @@ public class FileService {
         }
         return gson.fromJson(json, Movies.class);
     }
-//    public static MoviesHash readFileMap() {
-//        Map<Integer, MoviesHash> mapMovieDes = new HashMap<>();
-//        String json;
-//        try {
-//            json = Files.readString(pathMovies);
-//            mapMovieDes = new Gson().fromJson(jsonStr, itemsMapType);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        return mapMovieDes ;
-//    }
 
-    public static String file(){
-        String jsonMovies;
-        try {
-            jsonMovies = Files.readString(pathMovies);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return jsonMovies;
-    }
-//    public static MoviesHash readFileMovie() {
-//        String jsonMovies;
-//        try {
-//            jsonMovies = Files.readString(pathMovies);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-////        Map<String, Movie> retMap = new Gson().fromJson(
-////                jsonMovies, new TypeToken<HashMap<String , Movie>>() {}.getType()
-////        );
-////        return retMap;
-//        return gson.fromJson(jsonMovies, MoviesHash.class);
-//}
+
 }
